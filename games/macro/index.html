@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Jumper</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"Jumper"
+		};
+		swfobject.embedSWF(
+			"Jumper.swf", 
+			"altContent", "480px", "640px", "11.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; background-color: #222222; }
+		body { margin:0; }
+		#main {
+		position:absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -320px;
+			margin-left:-240px;
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+	<div id="altContent">
+		<h1>Jumper</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+	</div>
+</body>
+</html>
