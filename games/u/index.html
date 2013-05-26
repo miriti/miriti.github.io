@@ -17,6 +17,14 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=152523994830155";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,6 +39,9 @@
 		<div id="game">
 			<h1>FlashPlayer 11 Required</h1>
 			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>	
+		<div id="facebook">
+			<div class="fb-like" data-href="https://www.facebook.com/theUgame" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana" data-colorscheme="dark"></div>
 		</div>
 		<div id="feedback">
 			<h1><a href="https://docs.google.com/forms/d/1gmS4UUo5dLgT-_1odbDDDWUHT2tflOGqBM3AfK7TkbQ/viewform" target="_blank">Feedback</a></h1>
