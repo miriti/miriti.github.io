@@ -1,0 +1,151 @@
+*, html, body
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.hipsters img {
+	position: fixed;
+}
+
+#hipsterLeft
+{
+	left: 0;
+	top: 70px;
+}
+
+#hipsterRight
+{
+	right: 0;
+	top: 135px;
+}
+
+header > .row
+{
+	margin-top: 45px;
+}
+
+header .phone
+{
+	margin-bottom: 20px;
+}
+
+header .phone span
+{
+	font-size: 18pt;
+	font-weight: bold;
+	color: #838383;
+	margin-right: 12px;
+}
+
+header .phone a
+{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+header .search-button {
+	font-size: 20px;
+}
+
+.btn-enter
+{
+	width: 95px;
+	height: 30px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.cart 
+{
+	color: #c20150;
+	font-weight: bold;
+}
+
+.cart span {
+	color: #96d352;
+}
+
+.catalog-list
+{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	line-height: 2;
+}
+
+.catalog-list a
+{
+	margin-left: 15px;
+	margin-right: 15px;
+	text-decoration: underline;
+	color: black;
+}
+
+.catalog-list a:hover
+{
+	color: #428bca;
+}
+
+.features 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.catalog h3
+{
+	color: #757575;
+}
+
+footer .footer 
+{
+	margin-bottom: 0px;
+	margin-top: 75px;
+	padding-bottom: 0px;
+}
+
+footer ul
+{
+	list-style: none;
+	padding-left: 0px;
+	line-height: 2.3;
+}
+
+footer ul a
+{
+	color: #757575;
+	text-decoration: underline;
+}
