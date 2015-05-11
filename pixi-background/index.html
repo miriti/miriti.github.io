@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>    
+</head>
+<body>
+    <script src="pixi.min.js"></script>
+    <script>
+    var renderer = PIXI.autoDetectRenderer(256, 256, {antialiasing: false, transparent: false, resolution: 1});
+    document.body.appendChild(renderer.view);
+    renderer.backgroundColor = 0xff0000;
+
+    var scene = new PIXI.Container();
+
+    var render = function() {
+        renderer.render(scene);
+        requestAnimationFrame(render);
+    }
+
+    render();
+    </script>
+</body>
+</html>
