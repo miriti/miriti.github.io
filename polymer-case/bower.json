@@ -1,0 +1,19 @@
+{
+  "name": "polymer-case",
+  "version": "0.0.0",
+  "homepage": "https://github.com/miriti/miriti.github.io",
+  "authors": [
+    "Michael Miriti <michael@miriti.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "0.9.*"
+  }
+}

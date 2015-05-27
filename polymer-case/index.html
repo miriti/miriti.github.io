@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<title>Polymer case</title>
+<link rel="import" href="bower_components/polymer/polymer.html">
+<body>
+<dom-module id="test-element">
+    <template>
+    <div class="{{computedID('value')}}">DIV</div>
+    <p data-id="{{computedID('value')}}">P</p>
+    <button id="{{computedID('value')}}">BUTTON</button>
+    </template>
+</dom-module>
+
+<test-element></test-element>
+
+<script>
+Polymer({
+    is: 'test-element',
+    seed: 293472,
+    computedID: function(someval) {
+        return this.seed + '_' + someval;
+    }
+});
+</script>
+
+</body>
+</html>
