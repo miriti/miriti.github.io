@@ -12,9 +12,9 @@ window.extend = function (a, b, params) {
 };
 
 require.config({
-    basePath: "/js",
+    basePath: "js",
     paths: {
-        'pixi': '/lib/pixi.js/bin'
+        'pixi': 'lib/pixi.js/bin'
     }
 });
 
