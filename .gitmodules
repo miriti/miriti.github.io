@@ -1,0 +1,3 @@
+[submodule "proto/igdc124"]
+	path = proto/igdc124
+	url = https://github.com/miriti/igdc124.git
