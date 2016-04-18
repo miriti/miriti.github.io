@@ -1,9 +1,9 @@
 define([
     "jig/Container",
     "./Wave",
-    "../Enemies/Walker",
-    "../Enemies/Dumper",
-    "../Enemies/Swoosher"
+    "../enemies/Walker",
+    "../enemies/Dumper",
+    "../enemies/Swoosher"
 ], function (
     Container,
     Wave,
