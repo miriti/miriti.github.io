@@ -893,9 +893,9 @@ ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","18");
+		_this.setReserved("build","19");
 	} else {
-		_this.h["build"] = "18";
+		_this.h["build"] = "19";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -4224,7 +4224,7 @@ var Main = function() {
 	var testGame2 = openfl_utils_Assets.getMovieClip("TestGame2:");
 	var game = openfl_utils_Assets.getMovieClip("Game:");
 	var homeScene = openfl_utils_Assets.getMovieClip("home_scene:");
-	var current = homeScene;
+	var current = testGame2;
 	clipsContainer.addChild(current);
 	this.addChild(new openfl_display_FPS(10,10,0));
 	var button1 = new LeButton("TestGame2.fla",function() {
@@ -4241,7 +4241,7 @@ var Main = function() {
 		clipsContainer.addChild(current);
 	});
 	button2.set_x(button1.get_x() + button1.get_width() + 20);
-	button2.set_y(5);
+	button2.set_y(button1.get_y());
 	this.addChild(button2);
 	var button3 = new LeButton("home_scene.fla",function() {
 		clipsContainer.removeChild(current);
@@ -4249,7 +4249,7 @@ var Main = function() {
 		clipsContainer.addChild(current);
 	});
 	button3.set_x(button2.get_x() + button2.get_width() + 20);
-	button3.set_y(5);
+	button3.set_y(button1.get_y());
 	this.addChild(button3);
 };
 $hxClasses["Main"] = Main;
@@ -25477,7 +25477,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 586107;
+	this.version = 99251;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
