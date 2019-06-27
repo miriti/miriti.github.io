@@ -893,9 +893,9 @@ ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","19");
+		_this.setReserved("build","21");
 	} else {
-		_this.h["build"] = "19";
+		_this.h["build"] = "21";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -4226,7 +4226,7 @@ var Main = function() {
 	var homeScene = openfl_utils_Assets.getMovieClip("home_scene:");
 	var current = testGame2;
 	clipsContainer.addChild(current);
-	this.addChild(new openfl_display_FPS(10,10,0));
+	this.addChild(new openfl_display_FPS(10,10,13421772));
 	var button1 = new LeButton("TestGame2.fla",function() {
 		clipsContainer.removeChild(current);
 		current = testGame2;
@@ -25477,7 +25477,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 99251;
+	this.version = 979470;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
