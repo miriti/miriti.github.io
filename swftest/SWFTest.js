@@ -893,9 +893,9 @@ ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","21");
+		_this.setReserved("build","24");
 	} else {
-		_this.h["build"] = "21";
+		_this.h["build"] = "24";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -4224,6 +4224,7 @@ var Main = function() {
 	var testGame2 = openfl_utils_Assets.getMovieClip("TestGame2:");
 	var game = openfl_utils_Assets.getMovieClip("Game:");
 	var homeScene = openfl_utils_Assets.getMovieClip("home_scene:");
+	var testGame = openfl_utils_Assets.getMovieClip("TestGame:");
 	var current = testGame2;
 	clipsContainer.addChild(current);
 	this.addChild(new openfl_display_FPS(10,10,13421772));
@@ -4251,6 +4252,14 @@ var Main = function() {
 	button3.set_x(button2.get_x() + button2.get_width() + 20);
 	button3.set_y(button1.get_y());
 	this.addChild(button3);
+	var button4 = new LeButton("TestGame.fla",function() {
+		clipsContainer.removeChild(current);
+		current = testGame;
+		clipsContainer.addChild(current);
+	});
+	button4.set_x(button3.get_x() + button3.get_width() + 20);
+	button4.set_y(button1.get_y());
+	this.addChild(button4);
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
@@ -4513,7 +4522,11 @@ ManifestResources.init = function(config) {
 	manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("TestGame2",library);
-	data = "{\"name\":null,\"assets\":\"aoy4:pathy22:assets%2FTestGame2.swfy4:sizei161336y4:typey6:BINARYy2:idR1y7:preloadtgoR0y23:assets%2Fhome_scene.swfR2i614403R3R4R5R7R6tgoR0y17:assets%2FGame.swfR2i171281R3R4R5R8R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	data = "{\"name\":\"TestGame\",\"assets\":\"aoy4:pathy29:lib%2FTestGame%2FTestGame.biny4:sizei1030936y4:typey4:TEXTy2:idR1y7:preloadtgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[\"lib/TestGame/TestGame.bin\"],\"libraryType\":\"openfl._internal.formats.swf.SWFLiteLibrary\"}";
+	manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
+	library = lime_utils_AssetLibrary.fromManifest(manifest);
+	lime_utils_Assets.registerLibrary("TestGame",library);
+	data = "{\"name\":null,\"assets\":\"aoy4:pathy21:assets%2FTestGame.swfy4:sizei88998y4:typey6:BINARYy2:idR1y7:preloadtgoR0y22:assets%2FTestGame2.swfR2i161336R3R4R5R7R6tgoR0y23:assets%2Fhome_scene.swfR2i614403R3R4R5R8R6tgoR0y17:assets%2FGame.swfR2i171281R3R4R5R9R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -4534,6 +4547,12 @@ ManifestResources.init = function(config) {
 		ManifestResources.preloadLibraries.push(library);
 	} else {
 		ManifestResources.preloadLibraryNames.push("TestGame2");
+	}
+	library = lime_utils_Assets.getLibrary("TestGame");
+	if(library != null) {
+		ManifestResources.preloadLibraries.push(library);
+	} else {
+		ManifestResources.preloadLibraryNames.push("TestGame");
 	}
 	library = lime_utils_Assets.getLibrary("default");
 	if(library != null) {
@@ -25477,7 +25496,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 979470;
+	this.version = 757195;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
